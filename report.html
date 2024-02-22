@@ -1,0 +1,170 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<title>Vis & Society Assignment 2</title>
+	<link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+	<header>
+		<h1>
+			<small>Assignment 2</small>
+			Exploratory Data Analysis
+		</h1>
+
+		<p>
+			<strong>Yining Bei</strong> — <em>yining25@mit.edu</em>
+		</p>
+	</header>
+	<main>
+		<section>
+			<h2>Subtheme: Upzoning</h2>
+
+			<h3>Dataset: Metro Boston municipalities with single family zoning vs other housing zoning</h3>
+			<p>The dataset comprises a range of variables that likely include location specifics (such as municipality 
+				names and geospatial coordinates), housing characteristics (like number of families), and demographic 
+				information drawn from census data (e.g., household income, age distribution, and ethnicity population).
+				 This blend of housing and demographic data suggests a rich foundation for exploring relationships between 
+				 housing attributes and population features, to analyze potential problems of social segregation and discrimination. 
+			</p>
+
+			<h3>Overall Analysis Questions</h3>
+			<ol>
+				<p1>Based on the report "Exclusionary by Design: An Investigation of Zoning's Use as a Tool of Race, Class, and Family Exclusion in Boston's Suburbs, 1920 to Today", I raised the following questions.</p1>
+				<li>What is the current zoning of single-family housing versus multi-family housing in Metro Boston?</li>
+				<p1>Before doing further analysis, the current situation of housing zoning should be familiarized. 
+					Also, it is inspired by the article's exploration of how early 20th-century zoning practices were designed to 
+					create single-family residential areas, raising questions about the present-day zoning.
+				</p1>
+				<li>How does single-family zoning percentage correlate with racial diversity?</li>
+				<p1>Given the historical use of zoning to segregate communities, this question aims to investigate the current relationship between zoning patterns and racial diversity, 
+					exploring whether these historical patterns persist in influencing the racial composition of neighborhoods.
+				</p1>
+				<li>How does single-family zoning percentage correlate with household income?</li>
+				<p1>Given the report's insights on zoning's role in maintaining socio-economic barriers, 
+					this question seeks to understand the ongoing impact of zoning on economic disparities within neighborhoods.
+				</p1>
+				<li>Are there any differences in the racial characteristics of the population for single-family zoning and other family zoning in a certain municipality? </li>
+				<p1>
+					After analyzing Metro Boston based on the percentage of single family zoning, I think it is necessary to delve into the different zoning of a certain municipality.
+					Investigating if zoning distinctions (single-family vs. other family zoning) within municipalities perpetuate historical patterns of racial segregation or
+					 if they have evolved towards more inclusive communities.
+				</p1>
+				<li>Are there any differences in household income between single-family zoning and other family zoning in a certain municipality? </li>
+				<p1>Exploring how zoning types may influence economic diversity, assessing whether single-family zoning correlates with higher income levels compared to areas 
+					with more diverse housing options, reflecting on zoning's impact on socio-economic stratification.
+				</p1>
+			</ol>
+		</section>
+
+		<section>
+			<h2>Discoveries & Insights</h2>
+
+			<figure>
+				<img src="1.jpg" alt="" />
+				<figcaption>
+					Mapping Single-Family Zoning Percentage
+				</figcaption>
+			</figure>
+			<p>
+				Firstly, I had an overall understanding of the current zoning in Metro Boston. 
+				The mapping result illustrates the proportion of single-family zoning in various municipalities within the Metro Boston area. 
+				The color gradient represents the percentage of single-family zoning, with darker shades indicating a higher proportion of single-family zoning. 
+				Municipalities such as Littleton, Boxborough, and Weston show darker shades, suggesting a dominance of single-family zoning in these areas..
+			</p>
+
+			<figure>
+				<img src="zoning & white .jpg" alt="" />
+				<figcaption>
+					Single-Family Zoning Percentage and White Population Ratio
+				</figcaption>
+			</figure>
+
+			<figure>
+				<img src="zoning & black.jpg" alt="" />
+				<figcaption>
+					Single-Family Zoning Percentage and black Population Ratio
+				</figcaption>
+			</figure>
+			<p>
+				In the context of researching racial groups and zoning, the analysis focused on comparing two main racial groups, white and black, as examples. 
+				From Fig.2 and Fig.3, we can't tell a strong relationship between the percentage of single-family zoning and the white or black population ratio, 
+				The visualization shows only a nuanced trend rather than a clear correlation between these data.
+				In light of the subtle trends observed between the percentage of single-family zoning and the racial population ratio, 
+				I decided to contextualize these data within a geographic dimension, to further figure out any potential features. 
+			</p>
+			
+			<figure>
+				<img src="zoning & white map.jpg" alt="" />
+				<figcaption>
+					Mapping Single-Family Zoning Percentage and White Population Ratio
+				</figcaption>
+			</figure>
+			
+			<figure>
+				<img src="zoning & black map.jpg" alt="" />
+				<figcaption>
+					Mapping Single-Family Zoning Percentage and Black Population Ratio
+				</figcaption>
+			</figure>
+			<p>
+				The two maps illustrate that certain municipalities exhibit a more pronounced association between single-family zoning and racial demographics, 
+				with areas such as Arlington and Winchester showing noticeable densities of the white population (orange) and others like the municipalities around Boston displaying a presence of the black population (red). 
+				These patterns suggest localized variations in how zoning may intersect with racial distribution, 
+				although the overall correlation remains subtle across the broader region. For a detailed analysis of these patterns, 
+				further investigation into each municipality's specific context would be necessary.
+			</p>
+
+			<figure>
+				<img src="zoning ratio & income.jpg" alt="" />
+				<figcaption>
+					Single-Family Zoning Percentage and Household Income
+				</figcaption>
+			</figure>
+			<p>
+				Besides, I also explored the relationship between single-family zoning ratios and household income across various municipalities. 
+				The "ir" in the legend indicates different levels of household income ratio. The graph presents a layered area chart where each colored layer represents a different income bracket, 
+				with the blue line suggests the percentage of single-family zoning. 
+				The results are still unclear, although there are more high-income households near 100% single family zoning.
+			</p>
+
+			<figure>
+				<img src="zoning & racial in each city.jpg" alt="" />
+				<figcaption>
+				Single-Family Zoning and Race Percentage of 10 Municipalities
+				</figcaption>
+			</figure>
+			<p>
+				In the above visualizations, the focus was on the Metro Boston scale, measuring by the percentage of single-family zoning. 
+				Following that, more detailed visualizations within individual municipalities were conducted to observe the relationship between different zoning types and race percentages. 
+				This figure presents the first ten municipalities in alphabetical order that have both zoning types, where the blue narrow bars represent the single-family zoning of these municipalities, 
+				providing a comparative view of how zoning diversity correlates with racial composition.
+				The chart clearly shows that in most of the ten selected municipalities there is a higher white population in areas with single-family zoning, while black, Asian, and Hispanic populations are less represented. 
+				This pattern suggests a demographic skew associated with different zoning types within the selected municipalities.
+			</p>
+
+			<figure>
+				<img src="zoning & income in each city.jpg" alt="" />
+				<figcaption>
+				Single-Family Zoning and Household Income Percentage of 10 Municipalities
+				</figcaption>
+			</figure>
+			<p>
+				Then, I compared the household income percentages across the same ten municipalities in the same way. 
+				The It appears that almost all the ten municipalities show a concentration of higher income brackets in single-family zones 
+				(for Essex, the data of household income within single-family zoning is missing).
+			</p>
+		</section>
+
+		<section>
+			<h2>Summary</h2>
+
+			<p>Initially, my focus was on comparing data relationships between different municipalities within Metro Boston, but no clear connections were identified. This led to a shift in approach towards examining the effects of zoning within individual municipalities, specifically comparing outcomes between different zoning types. This adjustment in focus aimed to uncover more nuanced insights into how zoning practices influence demographic and socio-economic patterns at a more localized level, revealing the importance of considering diverse analytical perspectives to fully understand the complexities of urban planning and zoning impacts.	
+			</p>
+			<p>
+				Upon analyzing the data at the municipal level, it became evident that within the same municipality, different zoning regulations could significantly contribute to segregation in terms of demographics and income. This segregation indicates that zoning policies not only influence the physical landscape of neighborhoods but also have profound effects on the socio-economic fabric, leading to distinct demographic profiles and income levels within close geographical proximities. This insight underscores the critical role of zoning in shaping community composition, potentially exacerbating or mitigating socio-economic disparities. 
+			</p>
+		</section>
+	</main>
+</body>
+</html>
